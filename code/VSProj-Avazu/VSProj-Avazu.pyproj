@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>85554d6e-4da3-46dc-ab5e-6a925f2d046f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>VSProj_Avazu.py</StartupFile>
+    <StartupFile>ToVW.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ToVW.py" />
     <Compile Include="VSProj_Avazu.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
