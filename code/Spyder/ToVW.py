@@ -25,7 +25,8 @@ def to_vw(location_input_file, location_output_file, test = False):
             outfile.write(
               str(label) + 
               " '" + row['id'] + 
-              " |C" + " C1:" + row['C1'] + " C17:" + row['C17'] + " C18:" + row['C18'] + " C19:" + row['C19'] + " C20:" + row['C20']  + " C21:" + row['C21'] +
+              " |C" + " C1:" + row['C1'] + " C14:" + row['C14'] + " C15:" + row['C15'] + " C16:" + row['C16'] + " C17:" + row['C17'] + 
+                      " C18:" + row['C18'] + " C19:" + row['C19'] + " C20:" + row['C20'] + " C21:" + row['C21'] +
               " |O1" + " hour:" + row['hour'] + " banner_pos:" + row['banner_pos'] + 
               " |O2" + " " + row['site_id'] + " " + row['site_domain'] + 
                        " " + row['site_category'] + " " + row['app_id'] + " " + row['app_domain'] + " " + row['app_category'] + 
