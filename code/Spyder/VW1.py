@@ -15,3 +15,8 @@ None       0.3838 8
 1e-8       0.385  8
 1e-9       0.3837 9
 1e-10      0.3838 8
+
+
+
+
+~/code/vowpal_wabbit/utl/vw-varinfo --passes 1 -b 24 --readable_model avazu.model.vw --loss_function logistic avazu.trunc_train.vw
