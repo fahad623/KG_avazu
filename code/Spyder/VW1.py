@@ -9,17 +9,23 @@ None       0.3838 8
 1e-9       0.3837 9
 1e-10      0.3838 8
 
+After L1 of 1e-10 - 
+1e-9       0.3837    7
+
 L1 REgularization -
-vw avazu.train.vw -c --passes 300 -b 24 -f avazu.model.vw --loss_function logistic --l1 1e-9
+vw avazu.train.vw -c --passes 300 -b 24 -f l1_model.vw --loss_function logistic --l1 1e-9
 vw avazu.test.vw -t -i avazu.model.vw -p avazu.preds.txt --link logistic
 
 
 None        
 
 1e-7     0.3983    4    3048156303
-1e-8     0.3901    5
+1e-8     0.3852    5    7620378900
 1e-9     0.3841    9    6858345753
+1e-10    0.3836    7    5334265230
 
+Train on reduced features - 
+vw avazu.train.vw -c --passes 300 -b 24 --feature_mask l1_model.vw -f avazu.model --loss_function logistic --l2 1e-9 
 
 
 Smaller file -
