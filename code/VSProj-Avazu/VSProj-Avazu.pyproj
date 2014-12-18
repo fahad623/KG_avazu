@@ -25,7 +25,6 @@
     <Compile Include="ToKaggle.py" />
     <Compile Include="ToVW.py" />
     <Compile Include="VSProj_Avazu.py" />
-    <Compile Include="VW1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
