@@ -27,6 +27,14 @@ None
 Train on reduced features - 
 vw avazu.train.vw -c --passes 300 -b 24 --feature_mask l1_model.vw -f avazu.model --loss_function logistic --l2 1e-9 
 
+No l2 - 
+0.3444    4    3048151581
+
+L2 -
+
+1e-9     0.3447  4   3048156303
+1e-10    0.3445  4   3048156303
+
 
 Smaller file -
 vw avazu.trunc_train.vw -c --passes 300 -b 24 -f avazu.model.vw --loss_function logistic
@@ -44,3 +52,9 @@ Feature names -
 ~/code/vowpal_wabbit/utl/vw-varinfo -c --passes 3 -b 24 -f avazu.model.vw --loss_function logistic avazu.train.vw > varinfo.txt
 
 vw avazu.trunc_train.vw --passes 1 -b 24 --invert_hash avazu.model.vw --loss_function logistic 
+
+
+
+
+clicks:  6865066
+no_clicks:  33563901
